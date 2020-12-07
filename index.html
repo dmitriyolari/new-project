@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="icon" type="image/png" sizes="any" href="img/logos/favicon-logo.png">
+
     <title>Creatives</title>
 </head>
 <body>
@@ -12,43 +17,310 @@
 <header class="header">
     <div class="container">
         <div class="header_inner">
-            <div class="header_logo">
-                <img src="img/logo.png" alt="">
-            </div>
+            <a class="header_logo" href="#">
+                <img src="img/logos/logo.png" alt="">
+            </a>
             <nav class="nav">
-                <div class="nav-map">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">Pages</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Extensions</a>
-                    <a class="nav-link" href="#">Tutorials</a>
-                    <a class="nav-link" href="#">Contact us</a>
-                </div>
-                <div class="nav-social">
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-skype"></i>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
+                <ul class="nav-map">
+                    <li class="active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Extensions</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Tutorials</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+                <ul class="nav-social">
+                    <li class="nav-link">
+                        <a class="fab fa-facebook-f" href="#"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="fab fa-twitter" href="#"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="fab fa-skype" href="#"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="fab fa-linkedin-in" href="#"></a>
+                    </li>
+                </ul>
             </nav>
-        </div>
-    </div>
+        </div><!-- /.header_inner -->
+    </div><!-- /.container -->
 </header>
 
-<div class="intro">
-    <div class="container">
-        <div class="intro_inner">
-            <h1 class="intro_title">Creatives</h1>
-            <h4 class="intro_subtitle">Power by PSDfreebies.com</h4>
+<div class="intro-features_wrap">
+    <!-- Intro -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="intro_title">Creatives</h1>
+                <h4 class="intro_subtitle">Power by <a href="#">PSDfreebies.com</a></h4>
 
+                <div class="intro_scroll">Scroll Down</div>
+                <a class="intro-btn" href="#">
+                    <img class="btn-img" src="img/intro/arrow-down.png" alt="">
+                </a>
+            </div>
+
+            <div class="intro_low">We Are An Awesome Agency</div>
+        </div>
+    </div><!-- /.intro -->
+
+    <!-- Features -->
+    <div class="features">
+        <h1>W</h1>
+        <div class="container">
+
+            <div class="features_item">
+                <a class="features_img" href="#">
+                    <img src="img/features/feature-1-2.png" alt="">
+                </a>
+                <div class="features_title">Feature one</div>
+                <div class="features_text">Aenean lacinia bibendum nulla sed
+                    consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
+                    faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</div>
+            </div>
+            <div class="features_item">
+                <a class="features_img" href="#">
+                    <img src="img/features/feature-1-2.png" alt="">
+                </a>
+                <div class="features_title">Feature two</div>
+                <div class="features_text">Aenean lacinia bibendum nulla sed
+                    consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
+                    faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</div>
+            </div>
+            <div class="features_item">
+                <a class="features_img" href="#">
+                    <img src="img/features/feature-3.png" alt="">
+                </a>
+                <div class="features_title">Feature three</div>
+                <div class="features_text">Aenean lacinia bibendum nulla sed
+                    consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
+                    faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</div>
+            </div>
+            <div class="features_item">
+                <a class="features_img" href="#">
+                    <img src="img/features/feature-4.png" alt="">
+                </a>
+                <div class="features_title">Feature four</div>
+                <div class="features_text">Aenean lacinia bibendum nulla sed
+                    consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
+                    faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</div>
+            </div>
+
+        </div><!-- /.container -->
+    </div><!-- /.features -->
+</div><!-- /.intro-features_wrap -->
+
+<!-- News area -->
+<div class="news_area">
+    <div class="news_item">
+        <div class="news_item-text">
+            <div class="news_item-text-wrap">
+                <div class="news_item-date">Jan 4, 2016   |   In Culture</div>
+                <div class="news_item-title">Akita Inu Dog</div>
+                <div class="news_item-info">Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor.
+                    <br><br>
+                    Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </div>
+            </div>
+        </div>
+        <div class="news_item-image">
+            <img src="img/news/news-1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="news_item">
+        <div class="news_item-image">
+            <img src="img/news/news-2.jpg" alt="">
+        </div>
+        <div class="news_item-text">
+            <div class="news_item-text-wrap">
+                <div class="news_item-date">Jan 4, 2016   |   In Culture</div>
+                <div class="news_item-title">Akita Inu Dog</div>
+                <div class="news_item-info">Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor.
+                    <br><br>
+                    Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.news_area -->
+
+<!-- BLogs -->
+<section class="section">
+    <div class="container">
+        <h2 class="section_title">Let's blog</h2>
+        <h3 class="section_subtitle">We love clean design and advanced digital solutions.</h3>
+        <div class="blogs">
+
+            <div class="blogs_item">
+                <div class="blogs_image">
+                    <img src="img/blogs/blog-1-4.jpg" alt="">
+                </div>
+                <div class="blogs_title">Fresh Summer Campaign</div>
+                <div class="blogs_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor.</div>
+            </div>
+            <div class="blogs_item">
+                <div class="blogs_image">
+                    <img src="img/blogs/blog-2.jpg" alt="">
+                </div>
+                <div class="blogs_title">Fresh Summer Campaign</div>
+                <div class="blogs_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor.</div>
+            </div>
+            <div class="blogs_item">
+                <div class="blogs_image">
+                    <img src="img/blogs/blog-3.jpg" alt="">
+                </div>
+                <div class="blogs_title">Fresh Summer Campaign</div>
+                <div class="blogs_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor.</div>
+            </div>
+            <div class="blogs_item">
+                <div class="blogs_image">
+                    <img src="img/blogs/blog-1-4.jpg" alt="">
+                </div>
+                <div class="blogs_title">Fresh Summer Campaign</div>
+                <div class="blogs_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                    augue laoreet rutrum faucibus dolor auctor.</div>
+            </div>
+
+        </div><!-- /.blogs -->
+    </div><!-- /.container -->
+</section>
+
+<!-- Write -->
+<div class="quick-write">
+    <div class="container">
+
+        <div class="quick-write_item">
+            <img src="img/write.png" alt="">
+            <div class="quick-write_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
+                laoreet rutrum faucibus dolor auctor.</div>
+        </div>
+        <div class="quick-write_item">
+            <img src="img/write.png" alt="">
+            <div class="quick-write_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
+                laoreet rutrum faucibus dolor auctor.</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Key feature -->
+<div class="key-feature">
+    <div class="container">
+        <div class="key-feature_item">
+            <div class="key-feature_title">Akita Inu Dog</div>
+            <div class="key-feature_text">Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</div>
+            <div class="key-feature_header">
+                <div>Fully Responsive Design</div>
+                <div>High Quality Code</div>
+                <div>Different Headers & Layout</div>
+            </div>
+        </div>
+        <div class="key-feature_item">
+            <div class="key-feature_iphone">
+                <img src="img/iphone.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team -->
+<section class="section section-team">
+    <div class="container">
+        <h2 class="section_title">Our Team</h2>
+        <h3 class="section_subtitle"> sales long tail influencer pitch release niche market.</h3>
+        <div class="team_inner">
+
+            <div class="team_item">
+                <img src="img/team/team-1.jpg" alt="">
+                <div class="team_item-info">
+                    <div>JOHN SNOW</div>
+                    <div>CEO</div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="img/team/team-2.jpg" alt="">
+                <div class="team_item-info">
+                    <div>LADY SANSA</div>
+                    <div>WebDesigner</div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="img/team/team-3.jpg" alt="">
+                <div class="team_item-info">
+                    <div>DAVID SMITH</div>
+                    <div>Photographer</div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="img/team/team-4.jpg" alt="">
+                <div class="team_item-info">
+                    <div>LADY SANSA</div>
+                    <div>Photographer</div>
+                </div>
+            </div>
+
+        </div><!-- /.team_inner -->
+    </div><!-- /.container -->
+</section>
+
+
+<section class="section section-contact">
+    <div class="container">
+        <h2 class="section_title">We’d love to hear about your project.</h2>
+        <form class="contact" action="/" method="post">
+            <div class="contact_info">
+                <input class="contact_name" type="text" name="contact_name" placeholder="Name">
+                <input class="contact_email" type="email" name="contact_email" placeholder="Email">
+                <input class="contact_phone" type="tel" name="contact_phone" placeholder="Phone">
+            </div>
+            <textarea class="contact_message" name="contact_message" placeholder="Message" id=""></textarea>
+            <button class="contact_submit" type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Map -->
+<div class="map"></div>
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="copyright_inner">
+            <div>© 2016 <a href="https://psdfreebies.com/" target="_blank">PSDfreebies.com</a> – All Right Reserved</div>
+            <div>Design by: <a href="https://psdfreebies.com/" target="_blank"><img src="img/favicon.ico" alt=""> PSDfreebies.com</a></div>
         </div>
     </div>
 </div>
