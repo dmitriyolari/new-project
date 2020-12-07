@@ -1,9 +1,12 @@
+@import "mixins.scss";
+@import "variables.scss";
+
 body {
   margin: 0;
-//  font-family: ??
+  @include Gotham;
 
   font-size: 15px;
-  color: #f5f5f5;
+  color: #fff;
 }
 
 *,
@@ -16,38 +19,734 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+a {
+  outline: 0;
+}
+
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.header_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
+  width: 100%;
 
-  padding: 22px 0 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  border-bottom: 1px solid #7c7c7c;
-}
+  z-index: 1000;
 
-.header_logo {
+  .header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    //padding: 22px 0 18px;
+
+    border-bottom: 1px solid #7c7c7c;
+
+    .header_logo {
+      margin-right: 15px;
+    }
+  }
 }
 
 .nav {
   display: flex;
+  justify-content: space-between;
 
   width: 100%;
   max-width: 870px;
+  padding-top: 17px;
+
+  @include OpenSans;
+
+  .nav-map {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 40px;
+      padding: $paddingHead;
+
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+
+    .active {
+      border-bottom: 6px solid $blue;
+      margin-bottom: -1px;
+      padding: 33px 11px 33px 15px;
+    }
+  }
+
+  .nav-social {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: $paddingHead;
+
+    .nav-link {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .fab {
+      color: $white;
+      transition: color .05s linear;
+      @include navLink;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+  }
+
+  .nav-link {
+    color: #fff;
+    transition: color .05s linear;
+    @include navLink;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
 }
 
-.nav-map .nav-link {
-  width: 75px;
+div.intro {
+  background: url("../img/intro/intro-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  height: 1082px;
+  padding-top: 115px;
+
+  .intro_inner {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate3d(-50%, -53%, 0);
+
+    .intro_title {
+      @include Gotham;
+      font-weight: 700;
+      font-size: 153px;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+    }
+
+    .intro_subtitle {
+      @include Gotham;
+      font-weight: 500;
+      font-size: 25px;
+      color: $blue;
+
+      text-transform: uppercase;
+      letter-spacing: 0.68em;
+      line-height: 2;
+
+      a {
+        color: $blue;
+        transition: color .05s linear;
+
+        text-decoration: none;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+    }
+
+    .intro_scroll {
+      margin-top: 110px;
+      margin-bottom: 20px;
+    }
+
+    .intro-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+      width: 65px;
+      height: 65px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+
+      transition: background-color .05s linear;
+
+      &:hover {
+        border-color: $blue;
+        background-color: $blue;
+      }
+    }
+  }/* intro_inner */
+
+  .intro_low {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+
+    @include Gotham;
+    font-weight: 400;
+    font-size: 37.5px;
+    color: #fff;
+
+    text-transform: uppercase;
+
+  }
 }
 
-.nav-social {
-  display: flex;
+.intro-features_wrap {
+  position: relative;
+}
+
+div.features {
+  width: 100%;
+  padding-bottom: 125px;
+
+  position: absolute;
+  bottom: -556px;
+  z-index: 1;
+
+  background-color: $blue;
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 247px;
+    letter-spacing: 0.05em;
+
+    padding-top: 20px;
+
+    opacity: 0.18;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .features_item {
+    width: 23.7%;
+    text-align: center;
+    margin-right: 1.28%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .features_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 133px;
+      height: 133px;
+      border-radius: 100%;
+
+      background-color: #2e85aa;
+
+      margin: 0 auto;
+
+      transition: border .1s linear;
+
+      &:hover {
+        border: 2px solid #fff;
+      }
+    }
+
+    .features_title {
+      @include Gotham;
+      font-weight: 500;
+      font-size: 18px;
+
+      text-transform: uppercase;
+
+      margin-top: 24px;
+
+    }
+
+    .features_text {
+      @include OpenSans;
+      font-weight: 400;
+      font-size: 15px;
+
+      margin-top: 30px;
+    }
+  }
+}
+
+div.news_area {
+  width: 100%;
+  position: absolute;
+  top: 1638px;
+  z-index: 2;
+
+  .news_item {
+    display: flex;
+
+    .news_item-text {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      width: 50%;
+      height: 446px;
+
+      background-color: #222222;
+
+      .news_item-text-wrap {
+        max-width: 585px;
+        padding-right: 115px;
+        padding-left: 15px;
+
+        .news_item-date {
+          @include OpenSans;
+          font-weight: 400;
+          font-size: 13px;
+        }
+
+        .news_item-title {
+          @include OpenSans;
+          font-weight: 600;
+          font-size: 25px;
+
+          text-transform: uppercase;
+
+          margin: 10px 0 30px;
+        }
+
+        .news_item-info {
+          @include OpenSans;
+          font-weight: 400;
+          font-size: 15px;
+
+          &:first-child {
+            margin: 30px 0;
+          }
+        }
+
+      }
+    }
+
+    .news_item-image {
+      width: 50%;
+      height: 446px;
+      overflow: hidden;
+    }
+
+    &:last-child {
+      .news_item-image {
+        height: 474px;
+      }
+
+      .news_item-text {
+        background-color: #f3f3f3;
+        color: $black;
+        flex-direction: row;
+        height: 474px;
+
+        .news_item-text-wrap {
+          padding-left: 80px;
+          padding-right: 15px;
+        }
+
+        .news_item-image {
+          height: 474px;
+        }
+      }
+    }
+
+  }
+}
+
+section.section {
+  position: absolute;
+  top: 2558px;
+  z-index: 1;
+
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+
+  .section_title {
+    margin-top: 165px;
+
+    @include Gotham;
+    font-weight: 500;
+    font-size: 37.55px;
+    color: $black;
+
+    text-transform: uppercase;
+
+    line-height: 1;
+
+    &:before {
+      content: "B";
+
+      position: absolute;
+      top: 61px;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+
+      @include Roboto;
+      font-weight: 900;
+      font-size: 247.18px;
+      color: #000;
+      opacity: .18;
+    }
+  }
+
+  .section_subtitle {
+    @include OpenSans;
+    font-weight: 400;
+    font-size: 30.06px;
+    color: $black;
+    margin-top: 115px;
+    margin-bottom: 69px;
+  }
+
+  .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 105px;
+
+    .blogs_item {
+      width: 22.9%;
+      text-align: center;
+      margin-right: 2.56%;;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .blogs_image {
+        display: flex;
+        align-items: center;
+
+        width: 270px;
+        height: 280px;
+        overflow: hidden;
+      }
+
+      .blogs_title {
+        margin-top: 40px;
+        width: 270px;
+
+        @include Gotham;
+        font-weight: 500;
+        font-size: 18px;
+        color: $blue;
+
+        text-transform: uppercase;
+      }
+
+      .blogs_text {
+        margin-top: 20px;
+
+        @include OpenSans;
+        font-size: 15px;
+        color: $black;
+      }
+    }
+  }
+
+}
+
+
+.quick-write {
+  position: absolute;
+  top: 3592px;
+  z-index: 1;
+
+  width: 100%;
+  background-color: $blue;
+
+  padding: 110px 0 155px;
+
+  .container {
+    display: flex;
+
+    .quick-write_item {
+      display: flex;
+
+      .quick-write_text {
+        margin-left: 30px;
+
+        @include Gotham;
+        font-size: 15px;
+        color: #fff;
+      }
+
+      &:last-child {
+        margin-left: 30px;
+      }
+    }
+  }
+
+}
+
+.key-feature {
+  position: absolute;
+  top: 3930px;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  padding: 100px 0;
+
+  background: url("../img/keyfeature/key.jpg") center no-repeat;
+
+  .container {
+    display: flex;
+  }
+
+  .key-feature_iphone {
+    display: flex;
+    justify-content: center;
+  }
+
+  .key-feature_item {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .key-feature_title {
+      margin-bottom: 35px;
+
+      @include Gotham;
+      font-weight: 500;
+      font-size: 25px;
+      color: #fff;
+
+      text-transform: uppercase;
+    }
+
+    .key-feature_text {
+      margin-bottom: 65px;
+
+      @include Gotham;
+      font-size: 15px;
+      color: #fff;
+
+      width: 470px;
+    }
+
+    .key-feature_header {
+      @include Gotham;
+      font-weight: 500;
+      font-size: 15px;
+      color: #fff;
+
+      text-transform: uppercase;
+
+      div {
+        background-color: $blue;
+        padding: 11px 0 11px 17px;
+        margin-bottom: 24px;
+
+        max-width: 370px;
+
+        &:nth-child(2) {
+          max-width: 400px;
+        }
+
+        &:nth-child(3) {
+          max-width: 428px;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+section.section.section-team {
+  top: 4780px;
+  padding-bottom: 105px;
+
+  .section_title:before {
+    content: "T";
+  }
+
+  .team_inner {
+    display: flex;
+    justify-content: space-between;
+
+    .team_item {
+      position: relative;
+
+      .team_item-info {
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        padding-top: 23px;
+        width: 217px;
+        background-color: #fff;
+
+        div {
+          &:first-child {
+            margin-bottom: 10px;
+
+            @include Gotham;
+            font-weight: 500;
+            font-size: 20px;
+            color: $blue;
+
+            text-transform: uppercase;
+          }
+
+          &:last-child {
+            @include Gotham;
+            font-weight: 500;
+            font-size: 15px;
+            color: #000;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+
+section.section-contact {
+  top: 5730px;
+
+  background: url("../img/contact-bg.jpg") center no-repeat;
+
+  .section_title {
+    color: #fff;
+
+    &:before {
+      content: "C";
+      color: #fff;
+    }
+  }
+
+  .contact {
+    margin-top: 150px;
+    margin-bottom: 102px;
+
+    ::placeholder {
+      color: #fff;
+    }
+
+    .contact_info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 39px;
+
+      input {
+        width: 370px;
+
+        @include contactInfo;
+      }
+    }
+
+    .contact_message {
+      width: 100%;
+      margin-bottom: 46px;
+      height: 152px;
+
+      @include contactInfo;
+    }
+
+    .contact_submit {
+      width: 227px;
+      height: 64px;
+      padding-bottom: 21px;
+      padding-top: 17px;
+
+      background-color: $blue;
+      border: 0;
+
+      @include Gotham;
+      font-weight: 500;
+      font-size: 24px;
+      color: #fff;
+
+      text-transform: uppercase;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($blue, 10);
+        color: darken(#fff, 10);
+      }
+    }
+  }
+
+}
+
+div.map {
+  position: absolute;
+  top: 6549px;
+  z-index: 1;
+
+  height: 332px;
+  width: 100%;
+
+  background: url("../img/map-bg.jpg") center no-repeat;
+}
+
+.copyright {
+  position: absolute;
+  top: 6881px;
+  z-index: 1;
+
+  background-color: $black;
+  padding: 53px 0 49px 0;
+
+  width: 100%;
+  .copyright_inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include Roboto;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: darken(#fff, 50);
+      }
+    }
+  }
 }

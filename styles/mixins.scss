@@ -1,0 +1,30 @@
+@mixin navLink () {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@mixin Gotham () {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin OpenSans () {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin Roboto () {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin contactInfo () {
+  @include Gotham;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+
+  border: 1px solid #fff;
+  padding: 20px;
+
+  background-color: transparent;
+
+  outline: 0;
+}
