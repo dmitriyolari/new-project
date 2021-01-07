@@ -43,7 +43,7 @@ a {
   align-items: center;
   border-bottom: 1px solid #7c7c7c;
 }
-.header .header_inner .header_logo {
+.header .header_logo {
   margin-right: 15px;
 }
 
@@ -150,7 +150,7 @@ div.intro .intro_inner .intro_scroll {
   margin-top: 110px;
   margin-bottom: 20px;
 }
-div.intro .intro_inner .intro-btn {
+div.intro .intro-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@ div.intro .intro_inner .intro-btn {
   border-radius: 100%;
   transition: background-color 0.05s linear;
 }
-div.intro .intro_inner .intro-btn:hover {
+div.intro .intro-btn:hover {
   border-color: #11749e;
   background-color: #11749e;
 }
@@ -512,12 +512,12 @@ section.section-contact .contact {
 section.section-contact .contact ::placeholder {
   color: #fff;
 }
-section.section-contact .contact .contact_info {
+section.section-contact .contact_info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 39px;
 }
-section.section-contact .contact .contact_info input {
+section.section-contact .contact_info input {
   width: 370px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -528,10 +528,11 @@ section.section-contact .contact .contact_info input {
   background-color: transparent;
   outline: 0;
 }
-section.section-contact .contact .contact_message {
+section.section-contact .contact_message {
   width: 100%;
   margin-bottom: 46px;
   height: 152px;
+  resize: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -541,7 +542,7 @@ section.section-contact .contact .contact_message {
   background-color: transparent;
   outline: 0;
 }
-section.section-contact .contact .contact_submit {
+section.section-contact .contact_submit {
   width: 227px;
   height: 64px;
   padding-bottom: 21px;
@@ -555,7 +556,7 @@ section.section-contact .contact .contact_submit {
   text-transform: uppercase;
   cursor: pointer;
 }
-section.section-contact .contact .contact_submit:hover {
+section.section-contact .contact_submit:hover {
   background-color: #0c5270;
   color: #e6e6e6;
 }
@@ -569,7 +570,7 @@ div.map {
   background: url("../img/map-bg.jpg") center no-repeat;
 }
 
-.copyright {
+footer.copyright {
   position: absolute;
   top: 6881px;
   z-index: 1;
@@ -577,7 +578,8 @@ div.map {
   padding: 53px 0 49px 0;
   width: 100%;
 }
-.copyright .copyright_inner {
+
+.copyright_inner {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -585,11 +587,11 @@ div.map {
   font-size: 13px;
   color: #fff;
 }
-.copyright .copyright_inner a {
+.copyright_inner a {
   color: #fff;
   text-decoration: none;
 }
-.copyright .copyright_inner a:hover {
+.copyright_inner a:hover {
   color: gray;
 }
 
