@@ -19,10 +19,6 @@ p {
   margin: 0;
 }
 
-a {
-  outline: 0;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -507,7 +503,6 @@ section.section-contact .contact_info input {
   border: 1px solid #fff;
   padding: 20px;
   background-color: transparent;
-  outline: 0;
 }
 section.section-contact .contact_message {
   width: 100%;
@@ -521,7 +516,6 @@ section.section-contact .contact_message {
   border: 1px solid #fff;
   padding: 20px;
   background-color: transparent;
-  outline: 0;
 }
 section.section-contact .contact_submit {
   width: 227px;
