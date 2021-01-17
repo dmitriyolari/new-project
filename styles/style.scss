@@ -129,12 +129,11 @@ a {
 }
 
 div.intro {
-  background: url("../img/intro/intro-bg.jpg") center no-repeat;
-  background-size: cover;
+  background: url("../img/intro/intro-bg.jpg") no-repeat;
 
   position: relative;
 
-  height: 1082px;
+  height: 879px;
   padding-top: 115px;
 
   .intro_inner {
@@ -204,13 +203,21 @@ div.intro {
         background-color: $blue;
       }
     }
+}
 
-  .intro_low {
+div.features {
+  position: relative;
+  width: 100%;
+  padding-bottom: 125px;
+
+  background-color: $blue;
+
+  .features_upper {
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    top: 140px;
     transform: translateX(-50%);
-    z-index: 100;
+    left: 50%;
+    z-index: 1;
 
     @include Gotham;
     font-weight: 400;
@@ -220,21 +227,6 @@ div.intro {
     text-transform: uppercase;
 
   }
-}
-
-.intro-features_wrap {
-  position: relative;
-}
-
-div.features {
-  width: 100%;
-  padding-bottom: 125px;
-
-  position: absolute;
-  bottom: -556px;
-  z-index: 1;
-
-  background-color: $blue;
 
   h1 {
     text-align: center;
@@ -303,9 +295,6 @@ div.features {
 
 div.news_area {
   width: 100%;
-  position: absolute;
-  top: 1638px;
-  z-index: 2;
 
   .news_item {
     display: flex;
@@ -386,9 +375,7 @@ div.news_area {
 }
 
 section.section {
-  position: absolute;
-  top: 2558px;
-  z-index: 1;
+  position: relative;
 
   width: 100%;
   background-color: #fff;
@@ -410,7 +397,7 @@ section.section {
       content: "B";
 
       position: absolute;
-      top: 61px;
+      top: -104px;
       left: 50%;
       transform: translate3d(-50%, 0, 0);
 
@@ -480,10 +467,6 @@ section.section {
 
 
 .quick-write {
-  position: absolute;
-  top: 3592px;
-  z-index: 1;
-
   width: 100%;
   background-color: $blue;
 
@@ -512,11 +495,6 @@ section.section {
 }
 
 .key-feature {
-  position: absolute;
-  top: 3930px;
-  left: 0;
-  z-index: 1;
-
   width: 100%;
   padding: 100px 0;
 
@@ -591,7 +569,6 @@ section.section {
 }
 
 section.section.section-team {
-  top: 4780px;
   padding-bottom: 105px;
 
   .section_title:before {
@@ -643,22 +620,23 @@ section.section.section-team {
 }
 
 section.section-contact {
-  top: 5730px;
-
   background: url("../img/contact-bg.jpg") center no-repeat;
 
   .section_title {
+    margin-top: 0;
+    padding-top: 145px;
     color: #fff;
 
     &:before {
+      top: 40px;
+
       content: "C";
       color: #fff;
     }
   }
 
   .contact {
-    margin-top: 150px;
-    margin-bottom: 102px;
+    padding: 150px 0 102px;
 
     ::placeholder {
       color: #fff;
@@ -713,10 +691,6 @@ section.section-contact {
 }
 
 div.map {
-  position: absolute;
-  top: 6549px;
-  z-index: 1;
-
   height: 332px;
   width: 100%;
 
@@ -724,10 +698,6 @@ div.map {
 }
 
 footer.copyright {
-  position: absolute;
-  top: 6881px;
-  z-index: 1;
-
   background-color: $black;
   padding: 53px 0 49px 0;
 

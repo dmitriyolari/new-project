@@ -105,10 +105,9 @@ a {
 }
 
 div.intro {
-  background: url("../img/intro/intro-bg.jpg") center no-repeat;
-  background-size: cover;
+  background: url("../img/intro/intro-bg.jpg") no-repeat;
   position: relative;
-  height: 1082px;
+  height: 879px;
   padding-top: 115px;
   /* intro_inner */
 }
@@ -165,30 +164,24 @@ div.intro .intro-btn:hover {
   border-color: #11749e;
   background-color: #11749e;
 }
-div.intro .intro_low {
+
+div.features {
+  position: relative;
+  width: 100%;
+  padding-bottom: 125px;
+  background-color: #11749e;
+}
+div.features .features_upper {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  top: 140px;
   transform: translateX(-50%);
-  z-index: 100;
+  left: 50%;
+  z-index: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 37.5px;
   color: #fff;
   text-transform: uppercase;
-}
-
-.intro-features_wrap {
-  position: relative;
-}
-
-div.features {
-  width: 100%;
-  padding-bottom: 125px;
-  position: absolute;
-  bottom: -556px;
-  z-index: 1;
-  background-color: #11749e;
 }
 div.features h1 {
   text-align: center;
@@ -239,9 +232,6 @@ div.features .features_item .features_text {
 
 div.news_area {
   width: 100%;
-  position: absolute;
-  top: 1638px;
-  z-index: 2;
 }
 div.news_area .news_item {
   display: flex;
@@ -302,9 +292,7 @@ div.news_area .news_item:last-child .news_item-text .news_item-image {
 }
 
 section.section {
-  position: absolute;
-  top: 2558px;
-  z-index: 1;
+  position: relative;
   width: 100%;
   background-color: #fff;
   text-align: center;
@@ -321,7 +309,7 @@ section.section .section_title {
 section.section .section_title:before {
   content: "B";
   position: absolute;
-  top: 61px;
+  top: -104px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
   font-family: "Roboto", sans-serif;
@@ -375,9 +363,6 @@ section.section .blogs .blogs_item .blogs_text {
 }
 
 .quick-write {
-  position: absolute;
-  top: 3592px;
-  z-index: 1;
   width: 100%;
   background-color: #11749e;
   padding: 110px 0 155px;
@@ -399,10 +384,6 @@ section.section .blogs .blogs_item .blogs_text {
 }
 
 .key-feature {
-  position: absolute;
-  top: 3930px;
-  left: 0;
-  z-index: 1;
   width: 100%;
   padding: 100px 0;
   background: url("../img/keyfeature/key.jpg") center no-repeat;
@@ -457,7 +438,6 @@ section.section .blogs .blogs_item .blogs_text {
 }
 
 section.section.section-team {
-  top: 4780px;
   padding-bottom: 105px;
 }
 section.section.section-team .section_title:before {
@@ -495,19 +475,20 @@ section.section.section-team .team_inner .team_item .team_item-info div:last-chi
 }
 
 section.section-contact {
-  top: 5730px;
   background: url("../img/contact-bg.jpg") center no-repeat;
 }
 section.section-contact .section_title {
+  margin-top: 0;
+  padding-top: 145px;
   color: #fff;
 }
 section.section-contact .section_title:before {
+  top: 40px;
   content: "C";
   color: #fff;
 }
 section.section-contact .contact {
-  margin-top: 150px;
-  margin-bottom: 102px;
+  padding: 150px 0 102px;
 }
 section.section-contact .contact ::placeholder {
   color: #fff;
@@ -562,18 +543,12 @@ section.section-contact .contact_submit:hover {
 }
 
 div.map {
-  position: absolute;
-  top: 6549px;
-  z-index: 1;
   height: 332px;
   width: 100%;
   background: url("../img/map-bg.jpg") center no-repeat;
 }
 
 footer.copyright {
-  position: absolute;
-  top: 6881px;
-  z-index: 1;
   background-color: #222;
   padding: 53px 0 49px 0;
   width: 100%;
