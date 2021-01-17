@@ -118,7 +118,7 @@ div.intro .intro_inner {
   position: absolute;
   left: 50%;
   top: 53%;
-  transform: translate3d(-50%, -53%, 0);
+  transform: translate3d(-50%, -30%, 0);
 }
 div.intro .intro_inner .intro_title {
   font-family: "Montserrat", sans-serif;
