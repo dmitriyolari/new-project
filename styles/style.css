@@ -21,7 +21,7 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -174,10 +174,11 @@ div.features .features_upper {
   left: 50%;
   z-index: 1;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 37.5px;
+  font-weight: 500;
+  font-size: 37px;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: -0.019em;
 }
 div.features h1 {
   text-align: center;
