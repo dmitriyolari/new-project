@@ -717,3 +717,19 @@ footer.copyright {
       }
     }
   }
+
+  
+  @media (max-width: 1230px) {
+
+    div.features {
+
+      .features_upper {
+        top: 125px;
+        font-size: 30.5px;
+      }
+
+      h1 {
+        font-size: 204px;
+      }
+    }
+  }
