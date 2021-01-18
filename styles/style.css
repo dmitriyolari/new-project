@@ -359,24 +359,24 @@ section.section .blogs .blogs_item .blogs_text {
   color: #222;
 }
 
-.quick-write {
+div.quick-write {
   width: 100%;
   background-color: #11749e;
   padding: 110px 0 155px;
 }
-.quick-write .container {
+div.quick-write .container {
   display: flex;
 }
-.quick-write .container .quick-write_item {
+div.quick-write .container .quick-write_item {
   display: flex;
 }
-.quick-write .container .quick-write_item .quick-write_text {
+div.quick-write .container .quick-write_item .quick-write_text {
   margin-left: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #fff;
 }
-.quick-write .container .quick-write_item:last-child {
+div.quick-write .container .quick-write_item:last-child {
   margin-left: 30px;
 }
 
@@ -566,6 +566,7 @@ footer.copyright {
 }
 
 @media (max-width: 1230px) {
+  /* Features */
   div.features .features_upper {
     top: 125px;
     font-size: 30.5px;
@@ -573,6 +574,67 @@ footer.copyright {
   div.features h1 {
     font-size: 204px;
   }
+
+  /* News */
+  div.news_area .news_item .news_item-text .news_item-text-wrap {
+    padding-right: 60px;
+    padding-left: 30px;
+  }
+  div.news_area .news_item:last-child .news_item-text .news_item-text-wrap {
+    padding-left: 30px;
+  }
+
+  /* /.news_area */
+  /* Blogs */
+  section.section {
+    /* /.blogs */
+  }
+  section.section .blogs {
+    justify-content: center;
+    padding-bottom: 65px;
+  }
+  section.section .blogs .blogs_item {
+    width: 29%;
+    margin-bottom: 40px;
+  }
+  section.section .blogs .blogs_item:nth-child(2n+1) {
+    margin-right: 10%;
+  }
+  section.section .blogs .blogs_item:nth-child(2n) {
+    margin-right: 0;
+  }
+  section.section .blogs .blogs_item .blogs_text {
+    width: 280px;
+    text-align: left;
+  }
+
+  /* section.section */
+  div.quick-write {
+    padding: 110px 0;
+  }
+  div.quick-write .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.quick-write .container .quick-write_item {
+    width: 70%;
+  }
+  div.quick-write .container .quick-write_item:last-child {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  section.section.section-team {
+    padding-bottom: 50px;
+  }
+  section.section.section-team .team_inner {
+    flex-wrap: wrap;
+  }
+  section.section.section-team .team_inner .team_item {
+    width: 50%;
+    margin-bottom: 70px;
+  }
 }
+/* media 992px < x < 1230px */
 
 /*# sourceMappingURL=style.css.map */
