@@ -30,7 +30,7 @@ p {
   margin: 0 auto;
 }
 
-.header {
+header.header {
   width: 100%;
 
   position: absolute;
@@ -49,12 +49,66 @@ p {
     border-bottom: 1px solid #7c7c7c;
   }
 
-    .header_logo {
-      margin-right: 15px;
+  .header_logo {
+    margin-right: 15px;
+  }
+
+  .nav-toggle {
+    display: none;
+
+    width: 30px;
+    padding: 10px 0;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    z-index: 1;
+  }
+
+  .nav-toggle_item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+    transition: background .2s linear;
+
+    &:before, &:after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+
+      position: absolute;
+      left: 0;
+      z-index: 1;
+
+      transition: transform .2s linear;
     }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      bottom: -9px;
+    }
+  }
 }
 
-.nav {
+nav.nav {
   display: flex;
   justify-content: space-between;
 
@@ -833,3 +887,86 @@ footer.copyright {
       }
     }
   }/* media 992px < x < 1230px */
+
+
+@media (max-width: 992px) {
+
+  header.header {
+
+    .header_inner {
+
+      .header_logo {
+
+        img {
+          width: 66px;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  nav.nav {
+    justify-content: center;
+
+    .nav-link {
+      font-size: 19px;
+    }
+
+    .nav-map {
+
+      .active {
+        padding: 10px 0 20px;
+      }
+
+      li {
+        margin-right: 30px;
+        padding: 10px 0 20px;
+      }
+    }
+
+    .nav-social {
+      display: none;
+    }
+  }/* Nav map */
+
+  div.intro {
+
+    .intro_inner {
+
+      .intro_title {
+        font-size: 120px;
+      }
+
+      .intro_subtitle {
+        font-size: 20px;
+      }
+    }
+
+  }/* div.intro */
+
+
+}/* media 768px < x < 992px */
+
+@media (max-width: 768px) {
+  header.header {
+    padding: 10px 0;
+
+    .nav-toggle {
+      display: block;
+    }
+  }
+  nav.nav {
+    display: none;
+  }
+}/* media 576px < x < 768px */
+
+
+
+@media (max-width: 576px) {
+
+}/* media 320px < x < 576px */
+
+
+@media (max-width: 320px) {
+
+}/* media 320px < x < 576px */
