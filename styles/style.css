@@ -496,7 +496,8 @@ section.section-contact .contact_info {
   margin-bottom: 39px;
 }
 section.section-contact .contact_info input {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -507,6 +508,7 @@ section.section-contact .contact_info input {
 }
 section.section-contact .contact_message {
   width: 100%;
+  max-width: 1185px;
   margin-bottom: 46px;
   height: 152px;
   resize: none;
@@ -609,6 +611,7 @@ footer.copyright {
   }
 
   /* section.section */
+  /* Quick write */
   div.quick-write {
     padding: 110px 0;
   }
@@ -624,6 +627,7 @@ footer.copyright {
     margin-left: 0;
   }
 
+  /* Team */
   section.section.section-team {
     padding-bottom: 50px;
   }
@@ -633,6 +637,11 @@ footer.copyright {
   section.section.section-team .team_inner .team_item {
     width: 50%;
     margin-bottom: 70px;
+  }
+
+  /* Contact */
+  section.section-contact .contact_info input {
+    max-width: 305px;
   }
 }
 /* media 992px < x < 1230px */

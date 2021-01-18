@@ -645,7 +645,8 @@ section.section-contact {
       margin-bottom: 39px;
 
       input {
-        width: 370px;
+        width: 100%;
+        max-width: 370px;
 
         @include contactInfo;
       }
@@ -653,6 +654,7 @@ section.section-contact {
 
     .contact_message {
       width: 100%;
+      max-width: 1185px;
       margin-bottom: 46px;
       height: 152px;
       resize: none;
@@ -788,6 +790,7 @@ footer.copyright {
 
     }/* section.section */
 
+    /* Quick write */
     div.quick-write {
       padding: 110px 0;
 
@@ -806,6 +809,7 @@ footer.copyright {
       }
     }
 
+    /* Team */
     section.section.section-team {
       padding-bottom: 50px;
 
@@ -817,7 +821,15 @@ footer.copyright {
           margin-bottom: 70px;
         }
       }
+    }
 
 
+    /* Contact */
+    section.section-contact {
+      .contact_info {
+        input {
+          max-width: 305px;
+        }
+      }
     }
   }/* media 992px < x < 1230px */
