@@ -32,12 +32,12 @@ header.header {
   top: 0;
   left: 0;
   z-index: 1000;
+  border-bottom: 1px solid #7c7c7c;
 }
 header.header .header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #7c7c7c;
 }
 header.header .header_logo {
   margin-right: 15px;
@@ -98,6 +98,15 @@ header.header .nav-toggle.active .nav-toggle_item:after {
 }
 
 /* ================= Header */
+header.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2a2929;
+  border-bottom: none;
+}
+
 nav.nav {
   display: flex;
   justify-content: space-between;
@@ -120,7 +129,7 @@ nav.nav .nav-map li:last-child {
   margin-right: 5px;
 }
 nav.nav .nav-map .active {
-  border-bottom: 6px solid #11749e;
+  border-bottom: 6px solid rgba(17, 116, 158, 0.5);
   margin-bottom: -1px;
   padding: 33px 11px 33px 15px;
 }
