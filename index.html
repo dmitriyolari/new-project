@@ -17,20 +17,20 @@
 <main>
 <header class="header">
     <div class="container">
-        <div class="header_inner">
-            <a class="header_logo" href="#">
+        <div class="header_inner" id="header-inner">
+            <a class="header_logo" href="index.html">
                 <img src="img/logos/logo.png" alt="">
             </a>
             <nav class="nav">
-                <ul class="nav-map">
+                <ul class="nav-map" id="nav-map">
                     <li class="active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#" data-scroll="#home">Home</a>
                     </li>
                     <li>
                         <a class="nav-link" href="#">Pages</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#" data-scroll="#features">Features</a>
                     </li>
                     <li>
                         <a class="nav-link" href="#">Extensions</a>
@@ -39,7 +39,7 @@
                         <a class="nav-link" href="#">Tutorials</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="#" data-scroll="#contact-us">Contact us</a>
                     </li>
                 </ul>
                 <ul class="nav-social">
@@ -64,7 +64,7 @@
     </div><!-- /.container -->
 </header>
     <!-- Intro -->
-    <div class="intro">
+    <div class="intro" id="home">
         <div class="container">
             <div class="intro_inner">
                 <h1 class="intro_title">Creatives</h1>
@@ -80,7 +80,7 @@
     </div><!-- /.intro -->
 
     <!-- Features -->
-    <div class="features">
+    <div class="features" id="features">
         <h2 class="features_upper">We Are An Awesome Agency</h2>
         <h1>W</h1>
         <div class="container">
@@ -301,7 +301,7 @@
 <section class="section section-contact">
     <h2 class="section_title">We’d love to hear about your project.</h2>
     <div class="container">
-        <form class="contact" action="/" method="post">
+        <form class="contact" action="/" method="post" id="contact-us">
             <div class="contact_info">
                 <input class="contact_name" type="text" name="contact_name" placeholder="Name">
                 <input class="contact_email" type="email" name="contact_email" placeholder="Email">
@@ -325,6 +325,9 @@
         </div>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
