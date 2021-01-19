@@ -69,6 +69,9 @@ header.header .nav-toggle_item {
   margin: auto;
   transition: background 0.2s linear;
 }
+header.header .nav-toggle_item .active .nav-toggle_item {
+  background: none;
+}
 header.header .nav-toggle_item:before, header.header .nav-toggle_item:after {
   content: "";
   width: 100%;
@@ -86,6 +89,7 @@ header.header .nav-toggle_item:after {
   bottom: -9px;
 }
 
+/* ================= Header */
 nav.nav {
   display: flex;
   justify-content: space-between;
@@ -410,17 +414,21 @@ div.quick-write {
 div.quick-write .container {
   display: flex;
 }
-div.quick-write .container .quick-write_item {
+div.quick-write .quick-write_item {
   display: flex;
 }
-div.quick-write .container .quick-write_item .quick-write_text {
+div.quick-write .quick-write_item:last-child {
+  margin-left: 30px;
+}
+div.quick-write .quick-write_item img {
+  width: 69px;
+  height: 69px;
+}
+div.quick-write .quick-write_text {
   margin-left: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #fff;
-}
-div.quick-write .container .quick-write_item:last-child {
-  margin-left: 30px;
 }
 
 .key-feature {

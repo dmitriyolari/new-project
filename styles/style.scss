@@ -85,6 +85,10 @@ header.header {
     margin: auto;
     transition: background .2s linear;
 
+    .active .nav-toggle_item {
+      background: none;
+    }
+
     &:before, &:after {
       content: "";
       width: 100%;
@@ -106,7 +110,7 @@ header.header {
       bottom: -9px;
     }
   }
-}
+}/* ================= Header */
 
 nav.nav {
   display: flex;
@@ -524,22 +528,27 @@ div.quick-write {
 
   .container {
     display: flex;
+  }
 
-    .quick-write_item {
-      display: flex;
+  .quick-write_item {
+    display: flex;
 
-      .quick-write_text {
-        margin-left: 30px;
-
-        @include Gotham;
-        font-size: 15px;
-        color: #fff;
-      }
-
-      &:last-child {
-        margin-left: 30px;
-      }
+    &:last-child {
+      margin-left: 30px;
     }
+
+    img {
+      width: 69px;
+      height: 69px;
+    }
+  }
+
+  .quick-write_text {
+    margin-left: 30px;
+
+    @include Gotham;
+    font-size: 15px;
+    color: #fff;
   }
 
 }
