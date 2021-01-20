@@ -780,6 +780,13 @@ footer.copyright {
   div.features .features_item:nth-child(2n+1) {
     margin-right: 5.2%;
   }
+
+  .key-feature .key-feature_item {
+    width: 100%;
+  }
+  .key-feature .key-feature_item:last-child {
+    display: none;
+  }
 }
 /* media 768px < x < 992px */
 @media (max-width: 768px) {

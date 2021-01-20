@@ -1020,6 +1020,18 @@ footer.copyright {
       }
     }
   }
+
+  .key-feature {
+
+    .key-feature_item {
+      width: 100%;
+    }
+
+    .key-feature_item:last-child{
+      display: none;
+    }
+  }
+
 }/* media 768px < x < 992px */
 
 @media (max-width: 768px) {
