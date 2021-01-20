@@ -105,6 +105,7 @@ header.header.fixed {
   right: 0;
   background-color: #2a2929;
   border-bottom: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav.nav {
