@@ -299,6 +299,9 @@ div.features {
   background-color: $blue;
 
   .features_upper {
+    width: 100%;
+    text-align: center;
+
     position: absolute;
     top: 140px;
     transform: translateX(-50%);
@@ -327,6 +330,7 @@ div.features {
 
   .container {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .features_item {
@@ -993,7 +997,29 @@ footer.copyright {
 
   }/* div.intro */
 
+  div.features {
+    padding-bottom: 70px;
 
+    .features_upper {
+      top: 110px;
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 180px;
+    }
+
+    .features_item {
+      width: 47%;
+
+      margin-right: 0;
+      padding-bottom: 50px;
+
+      &:nth-child(2n+1) {
+        margin-right: 5.2%;
+      }
+    }
+  }
 }/* media 768px < x < 992px */
 
 @media (max-width: 768px) {
