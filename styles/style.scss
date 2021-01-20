@@ -1137,7 +1137,11 @@ footer.copyright {
 
 
 @media (max-width: 576px) {
-
+  section.section.section-team {
+    .team_inner .team_item {
+      width: 100%;
+    }
+  }
 }/* media 320px < x < 576px */
 
 

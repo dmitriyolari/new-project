@@ -857,6 +857,11 @@ footer.copyright {
   }
 }
 /* media 576px < x < 768px */
+@media (max-width: 576px) {
+  section.section.section-team .team_inner .team_item {
+    width: 100%;
+  }
+}
 /* media 320px < x < 576px */
 /* media 320px < x < 576px */
 
