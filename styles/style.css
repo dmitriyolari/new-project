@@ -104,8 +104,11 @@ header.header.fixed {
   left: 0;
   right: 0;
   background-color: #2a2929;
-  border-bottom: none;
+  border-bottom: 1px solid #2a2929;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+header.header.fixed nav.nav {
+  padding-top: 0;
 }
 
 nav.nav {
@@ -125,9 +128,14 @@ nav.nav .nav-map {
 nav.nav .nav-map li {
   margin-right: 40px;
   padding: 33px 0;
+  transition: border-bottom 0.01s linear;
 }
 nav.nav .nav-map li:last-child {
   margin-right: 5px;
+}
+nav.nav .nav-map li:hover {
+  border-bottom: 6px solid rgba(17, 116, 158, 0.5);
+  margin-bottom: -1px;
 }
 nav.nav .nav-map .active {
   border-bottom: 6px solid rgba(17, 116, 158, 0.5);
@@ -157,7 +165,7 @@ nav.nav .nav-social .fab:hover {
 }
 nav.nav .nav-link {
   color: #fff;
-  transition: color 0.05s linear;
+  transition: color 0.01s linear;
   text-decoration: none;
   font-size: 20px;
 }
@@ -718,6 +726,10 @@ footer.copyright {
   header.header .header_inner .header_logo img {
     width: 66px;
     height: 60px;
+  }
+
+  header.header.fixed nav.nav {
+    padding-top: 17px;
   }
 
   nav.nav {
