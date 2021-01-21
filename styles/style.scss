@@ -1234,10 +1234,6 @@ footer.copyright {
     &:nth-child(2) {
       max-width: 370px;
     }
-
-    &:nth-child(3) {
-      max-width: 298px;
-    }
   }
 
   section.section.section-team {
@@ -1305,6 +1301,10 @@ footer.copyright {
 
     &:nth-child(2) {
       max-width: 280px;
+    }
+
+    &:nth-child(3) {
+      max-width: 298px;
     }
   }
 }/* media 360px < x < 576px */

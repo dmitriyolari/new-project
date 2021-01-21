@@ -921,9 +921,6 @@ section.section .blogs .blogs_item .blogs_text {
   .key-feature .key-feature_item .key-feature_header div:nth-child(2) {
     max-width: 370px;
   }
-  .key-feature .key-feature_item .key-feature_header div:nth-child(3) {
-    max-width: 298px;
-  }
 
   section.section.section-team .team_inner .team_item {
     width: 100%;
@@ -975,6 +972,9 @@ div.news_area .news_item .news_item-image {
   }
   .key-feature .key-feature_item .key-feature_header div:nth-child(2) {
     max-width: 280px;
+  }
+  .key-feature .key-feature_item .key-feature_header div:nth-child(3) {
+    max-width: 298px;
   }
 }
 /* media 360px < x < 576px */
