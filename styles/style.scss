@@ -941,7 +941,6 @@ footer.copyright {
 
         img {
           width: 66px;
-          height: 60px;
         }
       }
     }
@@ -1276,6 +1275,37 @@ footer.copyright {
 
 
 @media (max-width: 360px) {
+
+  header.header {
+    padding: 5px 0;
+
+    .nav-toggle {
+      top: 22px;
+    }
+
+    .header_inner .header_logo img {
+      width: 50px;
+    }
+  }
+
+  nav.nav {
+
+    .nav-link {
+      font-size: 16px;
+    }
+
+    .nav-map {
+
+      .active {
+        border-bottom-width: 5px;
+      }
+
+      li {
+        border-bottom-width: 5px;
+      }
+    }
+
+  }
 
   div.intro .intro-btn {
     width: 55px;
