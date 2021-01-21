@@ -1238,6 +1238,19 @@ footer.copyright {
     }
   }
 
+  div.news_area .news_item {
+    flex-wrap: wrap;
+
+    .news_item-text,
+    .news_item-image {
+      width: 100%;
+    }
+
+    &:last-child {
+      flex-direction: column-reverse;
+    }
+  }
+
 }/* media 320px < x < 576px */
 
 

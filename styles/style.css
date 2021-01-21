@@ -922,6 +922,17 @@ section.section .blogs .blogs_item .blogs_text {
   div.features .features_item {
     width: 100%;
   }
+
+  div.news_area .news_item {
+    flex-wrap: wrap;
+  }
+  div.news_area .news_item .news_item-text,
+div.news_area .news_item .news_item-image {
+    width: 100%;
+  }
+  div.news_area .news_item:last-child {
+    flex-direction: column-reverse;
+  }
 }
 /* media 320px < x < 576px */
 /* media 320px < x < 576px */
