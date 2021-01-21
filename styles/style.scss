@@ -1101,6 +1101,26 @@ footer.copyright {
     }
   }
 
+  div.intro .intro_inner {
+
+    .intro_title {
+      font-size: 95px;
+      letter-spacing: normal;
+    }
+
+    .intro_subtitle {
+      font-size: 17px;
+
+      a {
+        display: block;
+      }
+    }
+
+    .intro_scroll {
+      margin-top: 170px;
+    }
+  }
+
   section.section {
 
     .blogs {
@@ -1165,6 +1185,10 @@ footer.copyright {
     div:first-child {
       margin-bottom: 6px;
     }
+  }
+
+  footer.copyright {
+    padding: 25px 0;
   }
 
 }/* media 576px < x < 768px */

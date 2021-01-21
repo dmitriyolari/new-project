@@ -838,6 +838,20 @@ footer.copyright {
     flex-direction: column;
   }
 
+  div.intro .intro_inner .intro_title {
+    font-size: 95px;
+    letter-spacing: normal;
+  }
+  div.intro .intro_inner .intro_subtitle {
+    font-size: 17px;
+  }
+  div.intro .intro_inner .intro_subtitle a {
+    display: block;
+  }
+  div.intro .intro_inner .intro_scroll {
+    margin-top: 170px;
+  }
+
   section.section {
     /* /.blogs */
   }
@@ -877,6 +891,10 @@ section.section .blogs .blogs_item .blogs_text {
   }
   .copyright_inner div:first-child {
     margin-bottom: 6px;
+  }
+
+  footer.copyright {
+    padding: 25px 0;
   }
 }
 /* media 576px < x < 768px */
