@@ -1034,10 +1034,16 @@ footer.copyright {
     }/* /.blogs */
   }
 
+  div.quick-write .container .quick-write_item {
+    width: 80%;
+  }
+
   .key-feature {
 
     .key-feature_item {
       width: 100%;
+
+      margin-left: 2%;
     }
 
     .key-feature_item:last-child{
@@ -1114,7 +1120,7 @@ footer.copyright {
   section.section-contact {
 
     .contact {
-      padding: 150px 30px 0px;
+      padding: 150px 30px 0;
     }
 
     .section_title {
