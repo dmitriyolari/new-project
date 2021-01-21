@@ -1197,6 +1197,19 @@ footer.copyright {
 
 @media (max-width: 576px) {
 
+  div.intro .intro_inner {
+
+    .intro_title {
+      font-size: 55px;
+    }
+
+    .intro_subtitle {
+      font-size: 12px;
+    }
+  }
+
+
+
   section.section {
 
     .blogs {
@@ -1254,6 +1267,24 @@ footer.copyright {
 }/* media 320px < x < 576px */
 
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 
-}/* media 320px < x < 576px */
+  div.intro .intro-btn {
+    width: 55px;
+    height: 55px;
+    border: 3px solid #fff;
+  }
+
+  div.quick-write {
+    padding: 90px 0;
+
+    .quick-write_item {
+      flex-wrap: wrap;
+    }
+
+    .quick-write_text {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+}/* media 360px < x < 576px */

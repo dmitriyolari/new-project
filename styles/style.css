@@ -899,6 +899,13 @@ section.section .blogs .blogs_item .blogs_text {
 }
 /* media 576px < x < 768px */
 @media (max-width: 576px) {
+  div.intro .intro_inner .intro_title {
+    font-size: 55px;
+  }
+  div.intro .intro_inner .intro_subtitle {
+    font-size: 12px;
+  }
+
   section.section .blogs .blogs_item {
     width: 100%;
   }
@@ -935,6 +942,24 @@ div.news_area .news_item .news_item-image {
   }
 }
 /* media 320px < x < 576px */
-/* media 320px < x < 576px */
+@media (max-width: 360px) {
+  div.intro .intro-btn {
+    width: 55px;
+    height: 55px;
+    border: 3px solid #fff;
+  }
+
+  div.quick-write {
+    padding: 90px 0;
+  }
+  div.quick-write .quick-write_item {
+    flex-wrap: wrap;
+  }
+  div.quick-write .quick-write_text {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+/* media 360px < x < 576px */
 
 /*# sourceMappingURL=style.css.map */
