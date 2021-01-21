@@ -625,7 +625,7 @@ div.quick-write {
       font-size: 15px;
       color: #fff;
 
-      width: 470px;
+      max-width: 470px;
     }
 
     .key-feature_header {
@@ -1228,6 +1228,18 @@ footer.copyright {
 
   }
 
+  .key-feature .key-feature_item .key-feature_header div {
+    max-width: 340px;
+
+    &:nth-child(2) {
+      max-width: 370px;
+    }
+
+    &:nth-child(3) {
+      max-width: 298px;
+    }
+  }
+
   section.section.section-team {
     .team_inner .team_item {
       width: 100%;
@@ -1285,6 +1297,14 @@ footer.copyright {
     .quick-write_text {
       margin-left: 0;
       margin-top: 30px;
+    }
+  }
+
+  .key-feature .key-feature_item .key-feature_header div {
+    max-width: 255px;
+
+    &:nth-child(2) {
+      max-width: 280px;
     }
   }
 }/* media 360px < x < 576px */

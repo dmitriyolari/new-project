@@ -488,7 +488,7 @@ div.quick-write .quick-write_text {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #fff;
-  width: 470px;
+  max-width: 470px;
 }
 .key-feature .key-feature_item .key-feature_header {
   font-family: "Montserrat", sans-serif;
@@ -915,6 +915,16 @@ section.section .blogs .blogs_item .blogs_text {
     width: 280px;
   }
 
+  .key-feature .key-feature_item .key-feature_header div {
+    max-width: 340px;
+  }
+  .key-feature .key-feature_item .key-feature_header div:nth-child(2) {
+    max-width: 370px;
+  }
+  .key-feature .key-feature_item .key-feature_header div:nth-child(3) {
+    max-width: 298px;
+  }
+
   section.section.section-team .team_inner .team_item {
     width: 100%;
   }
@@ -958,6 +968,13 @@ div.news_area .news_item .news_item-image {
   div.quick-write .quick-write_text {
     margin-left: 0;
     margin-top: 30px;
+  }
+
+  .key-feature .key-feature_item .key-feature_header div {
+    max-width: 255px;
+  }
+  .key-feature .key-feature_item .key-feature_header div:nth-child(2) {
+    max-width: 280px;
   }
 }
 /* media 360px < x < 576px */
