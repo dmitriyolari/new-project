@@ -1,12 +1,18 @@
 {
   "name": "new-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitriy",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "git+https://github.com/dmitriyolari/new-project.git",
+  "bugs": {
+    "url": "https://github.com/dmitriyolari/new-project/issues"
+  },
+  "homepage": "https://github.com/dmitriyolari/new-project#readme",
+  "keywords": [],
+  "description": ""
 }

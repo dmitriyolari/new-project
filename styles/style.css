@@ -175,6 +175,7 @@ nav.nav .nav-link:hover {
 
 div.intro {
   background: url("../img/intro/intro-bg.jpg") no-repeat;
+  background-size: cover;
   position: relative;
   height: 879px;
   padding-top: 115px;
