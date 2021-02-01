@@ -365,11 +365,14 @@ div.news_area .news_item:last-child .news_item-text .news_item-image {
 section.section {
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: #f0ebeb;
   text-align: center;
 }
+section.section .container {
+  background-color: #fff;
+}
 section.section .section_title {
-  margin-top: 165px;
+  padding-top: 165px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 37.55px;
@@ -380,7 +383,7 @@ section.section .section_title {
 section.section .section_title:before {
   content: "B";
   position: absolute;
-  top: -104px;
+  top: 59px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
   font-family: "Roboto", sans-serif;
@@ -462,6 +465,7 @@ div.quick-write .quick-write_text {
   width: 100%;
   padding: 100px 0;
   background: url("../img/keyfeature/key.jpg") center no-repeat;
+  background-size: cover;
 }
 .key-feature .container {
   display: flex;
@@ -512,7 +516,7 @@ div.quick-write .quick-write_text {
   margin-bottom: 0;
 }
 
-section.section.section-team {
+section.section.section-team .container {
   padding-bottom: 105px;
 }
 section.section.section-team .section_title:before {
@@ -551,6 +555,10 @@ section.section.section-team .team_inner .team_item .team_item-info div:last-chi
 
 section.section-contact {
   background: url("../img/contact-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+section.section-contact .container {
+  background: none;
 }
 section.section-contact .section_title {
   margin-top: 0;
@@ -621,6 +629,7 @@ div.map {
   height: 332px;
   width: 100%;
   background: url("../img/map-bg.jpg") center no-repeat;
+  background-size: cover;
 }
 
 footer.copyright {
