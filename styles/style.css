@@ -645,6 +645,11 @@ footer.copyright {
   color: gray;
 }
 
+@media (min-width: 1600px) {
+  div.news_area .news_item .news_item-image img {
+    width: 100%;
+  }
+}
 @media (max-width: 1230px) {
   /* Features */
   div.features .features_upper {
