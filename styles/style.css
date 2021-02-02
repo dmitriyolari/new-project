@@ -833,6 +833,9 @@ footer.copyright {
 @media (max-width: 768px) {
   header.header {
     padding: 10px 0;
+    background-color: #111;
+    opacity: 0.9;
+    border-bottom-color: #000;
   }
   header.header .nav-toggle {
     display: block;
